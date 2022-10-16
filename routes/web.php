@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-пше
+
 
 Route::get('/', [\App\Http\Controllers\LinksController::class, 'show'])
     ->name('links.show');
