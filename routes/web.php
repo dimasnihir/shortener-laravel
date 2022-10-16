@@ -13,14 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'MainController@index');
+пше
 
-Route::get('/links', [\App\Http\Controllers\LinksController::class, 'show'])
+Route::get('/', [\App\Http\Controllers\LinksController::class, 'show'])
     ->name('links.show');
 
-Route::post('/links', [\App\Http\Controllers\LinksController::class, 'send'])
+Route::post('/', [\App\Http\Controllers\LinksController::class, 'send'])
     ->name('links.send');
 
-Route::get('/links/{prefix}', [\App\Http\Controllers\LinksController::class, 'away'])
+Route::get('/{prefix}', [\App\Http\Controllers\LinksController::class, 'away'])
     ->where('prefix', '\w+')
     ->name('links.away');
